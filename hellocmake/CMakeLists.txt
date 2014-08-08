@@ -1,0 +1,7 @@
+
+# Top-Level CmakeLists.txt
+PROJECT( HELLO )
+ADD_SUBDIRECTORY( Hello )
+INCLUDE_DIRECTORIES(${HELLO_SOURCE_DIR}/Hello)
+ADD_EXECUTABLE(helloWorld test)
+TARGET_LINK_LIBRARIES(helloWorld Hello)
